@@ -27,7 +27,7 @@ class MainAdapter: RecyclerView.Adapter<MainAdapter.ViewHolder>() {
                 namatextView.text = hewan.nama
                 latinTextView.text = hewan.namaLatin
                 Glide.with(imageView.context)
-                    .load(HewanApi.getHewanUrl(hewan.imageResId))
+                    .load(HewanApi.getHewanUrl(hewan.imageId))
                     .error(R.drawable.ic_baseline_broken_image_24)
                     .into(imageView)
             }
